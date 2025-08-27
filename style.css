@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Chango';
+    src: url("./Chango-Regular.ttf");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgba(124, 104, 238, 0.603);
+    color: black; 
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    background-color: inherit;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: none;
+}
+
+/* Header Start */
+header {
+    align-self: stretch;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+} header .header-left {
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-shadow: 4px 0 6px rgba(0,0,0,0.2);
+} header .header-left > p{
+    align-self: stretch;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: italic;
+    background-color: chocolate;
+    color: yellow;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+} header .header-left-main {
+    padding: 1vh 0px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: calc(5px + 2%);
+} header .name-slogan {
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+} header h1 span {
+    letter-spacing: calc(2px + 0.25vw);
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Chango";
+    text-shadow: 5px 5px 5px black;
+} header .name-slogan p {
+    align-self: stretch;
+} header .name-slogan p em {
+    margin-left: calc(5px + 15%);
+    font-size: 1.35rem;
+    color: #d1e208;
+} #lastname {
+    color: #d15f09;
+} #company {
+    color: #473074;
+}
+header .header-right {
+    align-self: stretch;
+    flex: 1 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} header .header-right li {
+    align-self: stretch;
+    flex: 1 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 900;
+    border-left: 1px solid #473074;
+    box-shadow: 4px 0 6px rgba(0,0,0,0.2);
+} header .header-right li button {
+    align-self: stretch;
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: black;
+} header .header-right li a {
+    align-self: stretch;
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: black;
+}
+
+header .header-right button:hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+    border-radius: 50%;
+    background-color: #d15f09;
+    color: white;
+    box-shadow: 0 0 15px white;
+}
+
+header .header-right a:hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+    border-radius: 50%;
+    background-color: #d15f09;
+    color: white;
+    box-shadow: 0 0 15px white;
+}
+
+/* Header End */
+
+/* Main Start */
+main {
+    align-self: stretch;
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    background-color: rgba(114, 97, 214, 0.637);
+    font-size: 1.5rem;
+} main .about {
+    padding: 15vh 10vw;
+} main .projects {
+    padding: 15vh 10vw;
+
+    background-color: rgba(124, 105, 233, 0.781);
+    box-shadow: 14px 4px 6px rgba(0,0,0,0.2);
+} main .call-to-action {
+    padding: 15vh 10vw;
+}
+/* Main End */
+
+/* Footer Start */
+footer {
+    align-self: stretch;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: calc(5px + 1%);
+
+    background-color:darkgrey;
+} footer .footer-top-wrapper {
+    align-self: stretch;
+    padding-top: calc(2px + .75%);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} footer .footer-top-left {
+    flex: 1 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(5px + 1%);
+} footer .footer-top-left .footer-name {
+    font-family: 'Chango';
+    font-size: 1.25rem;
+    letter-spacing: calc(1px + 0.1vw);
+}
+footer .footer-top-right {
+    flex: 1 0 auto;
+    padding-right: calc(10px + 1vw);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: calc(5px + 2vw);
+} footer .footer-top-right div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 900;
+}
+footer .footer-bottom-wrapper {
+    align-self: stretch;
+    padding-bottom: calc(5px + 0.75%);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-top-wrapper .footer-top-left h3:first-child {
+    color: #d15f09;
+} footer .footer-top-wrapper .footer-top-left h3:last-child {
+    color: #473074;
+}
+/* Footer End */
