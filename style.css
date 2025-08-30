@@ -32,14 +32,6 @@ ul {
     list-style-type: none;
 }
 
-button {
-    outline: none;
-    background-color: inherit;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -68,6 +60,7 @@ header {
     box-shadow: 4px 0 6px rgba(0,0,0,0.2);
 } header .header-left > p{
     align-self: stretch;
+    padding: calc(2px + 0.1vw);
 
     display: flex;
     justify-content: center;
@@ -83,7 +76,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: calc(5px + 2%);
+    gap: calc(0.5rem + 1vw);
 } header .name-slogan {
     flex: 1 0 auto;
 
@@ -91,10 +84,10 @@ header {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 5px;
+    gap: calc(1px + 0.55vh);
 } header h1 span {
     letter-spacing: calc(2px + 0.25vw);
-    font-size: 3rem;
+    font-size: calc( 1rem + 2vw );
     font-weight: 900;
     text-transform: uppercase;
     font-family: "Chango";
@@ -103,8 +96,8 @@ header {
     align-self: stretch;
 } header .name-slogan p em {
     margin-left: calc(5px + 15%);
-    font-size: 1.35rem;
-    color: #d1e208;
+    font-size: calc(0.25rem + 1vw);
+    color: yellow;
 } #lastname {
     color: #d15f09;
 } #company {
@@ -128,18 +121,6 @@ header .header-right {
     font-weight: 900;
     border-left: 1px solid #473074;
     box-shadow: 4px 0 6px rgba(0,0,0,0.2);
-} header .header-right li button {
-    align-self: stretch;
-    flex: 1 0 auto;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-
-    font-weight: 900;
-    font-size: 1.5rem;
-    color: black;
 } header .header-right li a {
     align-self: stretch;
     flex: 1 0 auto;
@@ -150,26 +131,15 @@ header .header-right {
     align-items: center;
 
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: calc(0.5rem + 1vw);
     color: black;
-}
-
-header .header-right button:hover {
+} header .header-right a:hover {
     transform: scale(0.8);
     transition: 0.5s;
     border-radius: 50%;
-    background-color: #d15f09;
-    color: white;
-    box-shadow: 0 0 15px white;
-}
-
-header .header-right a:hover {
-    transform: scale(0.8);
-    transition: 0.5s;
-    border-radius: 50%;
-    background-color: #d15f09;
-    color: white;
-    box-shadow: 0 0 15px white;
+    background-color: #473074;
+    color: #d15f09;
+    box-shadow: 0 0 15px #d15f09;
 }
 
 /* Header End */
@@ -192,7 +162,7 @@ main {
     padding: 15vh 10vw;
 
     background-color: rgba(124, 105, 233, 0.781);
-    box-shadow: 14px 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 } main .call-to-action {
     padding: 15vh 10vw;
 }
@@ -258,3 +228,34 @@ footer .footer-top-wrapper .footer-top-left h3:first-child {
     color: #473074;
 }
 /* Footer End */
+
+@media (max-width: 1150px) {
+    header {
+        flex-flow: column nowrap;
+    } header .header-left {
+        align-self: stretch;
+    } header .header-left img {
+        height: auto;
+        width: 10vw;
+        min-width: 100px;
+    } header h1 span {
+        letter-spacing: calc( 2px + 0.25vw );
+        font-size: calc( 1rem + 1vw );
+        text-shadow: 3px 3px 3px black;
+    } header .name-slogan p em {
+        margin-left: calc(5px + 15%);
+        font-size: calc(0.55rem + 1vw);
+        color: yellow;
+    }
+
+    footer {
+        padding: 2vh;
+    } footer .footer-top-wrapper {
+        flex-flow: column nowrap;
+        gap: calc( 5px + 1vh);
+    } footer .footer-top-right {
+        flex-flow: column nowrap;
+    } footer .footer-bottom-wrapper {
+        padding: calc(5px + 1vh);
+    }
+}
