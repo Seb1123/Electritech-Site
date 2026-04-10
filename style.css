@@ -24,7 +24,7 @@ body {
     align-items: center;
 
     background-color: rgba(124, 104, 238, 0.603);
-    color: black; 
+    color: black;
     font-family: sans-serif;
 }
 
@@ -91,7 +91,7 @@ header {
     font-weight: 900;
     text-transform: uppercase;
     font-family: "Chango";
-    text-shadow: 5px 5px 5px black;
+    /* text-shadow: 5px 5px 5px black; */
 } header .name-slogan p {
     align-self: stretch;
 } header .name-slogan p em {
@@ -165,15 +165,62 @@ main {
 
     background-color: rgba(114, 97, 214, 0.637);
     font-size: 1.5rem;
+} main h2 {
+    font-size: calc(2.5rem + 1vw);
 } main .about {
     padding: 15vh 10vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc(20px + 2vh);
 } main .projects {
     padding: 15vh 10vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc(20px + 2vh);
 
     background-color: rgba(124, 105, 233, 0.781);
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 } main .call-to-action {
     padding: 15vh 10vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc(20px + 2vh);
+}
+.emailMsg {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc(10px + 1vh);
+} .emailMsg * {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc(5px + 0.5vh);
+} .emailMsg input {
+    margin-left: calc(5px + 1vw);
+    padding-left: calc(5px + 0.5vw);
+    height: calc(15px + 1vw);
+
+    font-size: calc(0.75rem + 0.5vw);
+} .emailMsg textarea {
+    margin-left: calc(5px + 1vw);
+    padding: calc(5px + 0.75vh);
+} .emailMsg button {
+    margin-left: calc(5px + 1vw);
+    padding: 5px;
+
+    border-radius: 10px;
 }
 /* Main End */
 
@@ -242,7 +289,6 @@ footer .footer-top-wrapper .footer-top-left h3:first-child {
     color: rgba(0,0,0,0.85);
     font-style: italic;
 }
-/* Footer End */
 
 @media (max-width: 1150px) {
     header {
@@ -265,11 +311,34 @@ footer .footer-top-wrapper .footer-top-left h3:first-child {
         flex: 1 0 150px;
     }
 
+     header .header-right li {
+        border-left: 1px solid #473074;
+        box-shadow: 0px 0px 0px transparent;
+    } header .header-right li:first-child {
+        border-left: none;
+    } header .header-right li a {
+        padding: 1vh 0;
+
+        gap: calc(5px + 1vh);
+
+        border-width: 1px 0px 1px 1px;
+        border-style: solid; 
+        border-color: black;
+    } header .header-right li:first-child a {
+        border-width: 1px 0px 1px 0px;
+    }.header-right .nav-icon {
+        width: calc(30px + 2vw);
+    } .header-right a p {
+        font-size: calc(1.25rem + 1vw);
+    }
+
     footer {
         padding: 2vh;
+
+        gap: calc(15px + 1vh);
     } footer .footer-top-wrapper {
         flex-flow: column nowrap;
-        gap: calc( 5px + 1vh);
+        gap: calc(15px + 1vh);
     } footer .footer-top-right {
         flex-flow: column nowrap;
     } footer .footer-bottom-wrapper {
