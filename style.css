@@ -372,4 +372,14 @@ footer .footer-top-wrapper .footer-top-left h3:first-child {
     }.header-right .nav-icon {
         width: calc(15px + 2vw);
     }
+
+    main .call-to-action textarea {
+        width: 50%;
+        height: auto;
+    }
+
+    footer .footer-top-left img {
+        max-width: 100px;
+        height: auto;
+    }
 }
